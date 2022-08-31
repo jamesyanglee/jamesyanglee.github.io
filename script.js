@@ -95,27 +95,3 @@ btnHold.addEventListener('click', function () {
 });
 
 btnNew.addEventListener('click', init);
-
-/*
-what we are looking for when we click on the new game button is to remove the player--winner class and to reset all the scores back to 0. essentially, we need to reset the initial conditions of the game. we already did something similar to our first game so maybe this is a challenge for us
-
-
-we need btnNew so we need an event handler
-btnNew.addEventListener('click', function() {
-
-})
-
-we want to set score0El and score1El back to zero. 
-
-We also need to set the internal state variables back to the inital state. 
-// const scores = [0, 0];
-// let currentScore = 0;
-// let activePlayer = 0;
-// let playing = true;
-we should not copy this to the btnNew function. instead we will create a function which contains this code together with the code in btnNew 
-
-
-we need to use the init function on the event handler. just like before, we do not declare an anonymous function like we did before (function () {}) but instead we pass in the init function which again is just a value and so its perfectly ok to pass this value into another function. keep in mind that we do not call this function, it's javascript that does as soon as the user clicks on the new game button.
-btnNew.addEventListener('click', init);
-
-*/
